@@ -188,7 +188,7 @@ confusionMatrix(res,churnData.test$Churn,
 res.p <- predict(tree, churnData.test)[,"Yes"]
 res.p
 
-
+#compare with random 
 #data frame
 lift_result <- data.frame(prob = res.p,
   y = churnData.test$Churn)
